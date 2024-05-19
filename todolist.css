@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #448FB7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 98vh;
+}
+
+.todolist {
+    background-color: #fff;
+    width: 400px;
+    padding: 50px;
+}
+
+.todolist h1 {
+    color: #4B4D4C;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.adicionarItem {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.adicionarItem input {
+    width: 85%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+    
+}
+
+.adicionarItem button {
+    width: 10%;
+    padding: 10px;
+    background-color: #448FB7;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+li .excluir, li .editar {
+    color: #448FB7;
+    background-color: #ffffff00;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+li .excluir{
+    font-size: 22px;
+    font-weight: 600;
+}
+li .editar {
+    background-color: #ffffff00;
+    margin-right: 5px;
+}
+
+li .excluir:hover, li .editar:hover {
+    color: #555;
+}
+
+span.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+span {
+    flex: 1;
+    padding-left: 10px;
+}
